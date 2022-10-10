@@ -9,14 +9,14 @@ import random
 nowtime = datetime.utcnow() + timedelta(hours=8)  # 东八区时间
 today = datetime.strptime(str(nowtime.date()), "%Y-%m-%d") #今天的日期
 
-start_date = os.getenv('START_DATE')
-city = os.getenv('CITY')
-birthday = os.getenv('BIRTHDAY')
+start_date = os.getenv('2022-8-5')
+city = os.getenv('上海')
+birthday = os.getenv('2002-6-5')
 
-app_id = os.getenv('APP_ID')
-app_secret = os.getenv('APP_SECRET')
+app_id = os.getenv('wx14995372875e4d15')
+app_secret = os.getenv('f36fe1e02eae62d84ceb529b3fd230b3')
 
-user_ids = os.getenv('USER_ID', '').split("\n")
+user_ids = os.getenv('oxDrt6ryGwHBAP7cgmITeJBNu4pk', '').split("\n")
 template_id = os.getenv('TEMPLATE_ID')
 
 if app_id is None or app_secret is None:
